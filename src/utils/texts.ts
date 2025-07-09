@@ -1,4 +1,4 @@
-import { TitleTextProps } from "@/components/ui/title_text/title_text";
+
 
 export const textAll= {
     section1_1:{

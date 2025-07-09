@@ -1,5 +1,5 @@
 import Title_Text from "../../ui/title_text/title_text";
-import AnimaisServices from "@/utils/services/animal_services";
+import AnimaisServices from "@/components/services/animal_services";
 import { textAll } from "@/utils/texts";
 import css_style from "@/components/sections/Sanimal_run/animal_run.module.css"
 

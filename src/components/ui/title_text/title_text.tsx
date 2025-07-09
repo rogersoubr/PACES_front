@@ -1,6 +1,7 @@
 import React from "react";
-import css_style from "@/components/ui/title_text/title_text.module.css"
-export interface TitleTextProps{
+import css_style from "@/components/ui/title_text/title_text.module.css";
+
+interface TitleTextProps{
     id: string
     title: string;
     text: string;

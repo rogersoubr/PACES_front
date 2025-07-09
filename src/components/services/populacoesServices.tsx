@@ -1,4 +1,4 @@
-'use client';
+"use client"
 
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -12,7 +12,7 @@ interface Population {
   filhos: string[];
 }
 
-export default function populationsServices() {
+export default function PopulationsServices() {
   const [populations, setpopulations] = useState<Population[]>([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ export default function populationsServices() {
       <h1 className="text-lime-900 text-4xl">Famílias</h1>
       <ul className="flex flex-wrap gap-4">
         {populations.map((p) => (
-          <li key={p.id} className="bg-lime-200 p-4 rounded shadow mb-4 text-lime-900  w-60">
+          <li key={p.id} className="bg-lime-50 p-4 border-2 border-b-lime-900 rounded shadow mb-4 text-lime-900  w-60">
             <h3 className="font-bold">Papai: {p.nomeA} ({p.apelido})</h3>
             <p><strong>Idade:</strong> {p.idade}</p>
             <p><strong>Endereço:</strong> {p.endereco}</p>
