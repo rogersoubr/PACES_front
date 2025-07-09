@@ -11,7 +11,7 @@ export default function Text_initial(){
                     <h3 className="font-bold text-lime-900">Veja o vídeo a seguir: </h3>
                 </Title_Text>
 
-                <iframe className="w-full max-w-sm h-56 " src="https://www.youtube-nocookie.com/embed/htUnYzKGT9s?si=FH_AagHA_NkwbvRx" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  allowfullscreen></iframe>
+                <iframe className="w-full max-w-sm h-56 " src="https://www.youtube-nocookie.com/embed/htUnYzKGT9s?si=FH_AagHA_NkwbvRx" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" ></iframe>
 
                 <Title_Text id={id2} title={title2} text={text2}>
                     <ul className={css_style.list}>

@@ -1,5 +1,9 @@
 .text_initial{
-    margin: 3rem;
+    /* um marginsó não pegou */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 .list{
     margin: 1.5rem;

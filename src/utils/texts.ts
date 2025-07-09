@@ -16,19 +16,19 @@ export const textAll= {
     section2:{
         id: "section2_animal",
         title: "Dados coletados",
-        text: "Uma API voltada à luta contra o especismo pode reunir, organizar e disponibilizar dados sobre os animais e seus detalhes. (se der, paralax depois de mostrar os animais da api)"
+        text: "Uma API voltada à luta contra o especismo pode reunir, organizar e disponibilizar dados sobre os animais e seus detalhes. Exemplo:"
         
     },
-    section3_1:{
+    section3:{
         id: "section3_children",
         title: "Novas vidas",
         text: "Para combater o Especismo, devemos refletir sobre como nossas escolhas afetam os animais e reduzir ou eliminar o uso de produtos de origem animal. Assim, vamos gerar novas vidas, como essas que monitoramos: "
         
     },    
-    section3_2:{
-        id2: "section3_final",
-        title2: "Conclusão",
-        text2:"Combater o especismo é lutar por justiça para todos os seres sencientes. APIs que monitoram populações animais ou denunciam práticas especistas são ferramentas poderosas para promover a empatia, informar decisões e transformar a sociedade rumo a um mundo mais ético e equilibrado."
+    section4:{
+        id: "section3_final",
+        title: "Conclusão",
+        text:"Combater o especismo é lutar por justiça para todos os seres sencientes. APIs que monitoram populações animais ou denunciam práticas especistas são ferramentas poderosas para promover a empatia, informar decisões e transformar a sociedade rumo a um mundo mais ético e equilibrado."
         
     }  
     

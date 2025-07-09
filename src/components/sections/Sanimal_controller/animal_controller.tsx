@@ -1,5 +1,18 @@
+import Title_Text from "../../ui/title_text/title_text";
+import PopulacoesServices from "@/components/services/populacoesServices";
+import { textAll } from "@/utils/texts";
+import css_style from "@/components/sections/Sanimal_controller/animal_controller.module.css"
+
 export default function Animal_controller(){
+    const {id, title, text} = textAll.section3;
     return(
-        <h1>FILHINHOS</h1>
+        <section className={`allAnimals ${css_style.animal_controller}`}>
+                <Title_Text id={id} title={title} text={text}>
+
+                <PopulacoesServices/>
+
+                </Title_Text>
+        </section>
     );
+
 }
