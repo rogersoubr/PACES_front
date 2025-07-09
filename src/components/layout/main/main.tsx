@@ -6,7 +6,7 @@ import Localization from "@/components/sections/Slocalization/localization";
 import css_style from "@/components/layout/main/main.module.css";
 
 interface ChildrenProps{
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 export default function Main({children}: ChildrenProps){
