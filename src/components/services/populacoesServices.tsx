@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Skeleton from "@/skeleton";
 
 interface Population {
   id: string;
@@ -18,10 +19,12 @@ const animalImages: Record<string, string> = {
   "Lobo-guará": "/images/lobo-guara.jpg",
   "Onça-pintada": "/images/onca.jpg",
   "Ararinha-azul": "/images/arara.jpg",
+  "baleia-azul": "/images/baleia.jpg",
 };
 
 export default function PopulationsServices() {
   const [populations, setpopulations] = useState<Population[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios.get("https://paces.onrender.com/populacoes")
@@ -30,8 +33,13 @@ export default function PopulationsServices() {
       })
       .catch((error) => {
         console.log("DEBUG DO ROGER: ",error);
-      });
+      }).finally(()=>{
+        setLoading(false);
+      } )
+      ;
   }, []);
+
+  if (loading) return <Skeleton />;
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -39,12 +47,13 @@ export default function PopulationsServices() {
       <ul className="flex flex-wrap gap-4">
         {populations.map((p) => (
 
-          <li key={p.id} className="bg-lime-50 p-4 border-2 border-b-lime-900 rounded shadow mb-4 text-lime-900  w-60">
-            <img src={animalImages[p.nomeA]} alt={p.nomeA} />
-            <h3 className="font-bold">Pai/mãe: {p.nomeA} ({p.apelido})</h3>
+          <li key={p.id} className="bg-lime-50 p-4 border-4 border-b-lime-900 rounded shadow mb-4 text-lime-900  w-60">
+
+            <h3 className="font-bold">Animal: {p.apelido} | {p.nomeA}</h3>
             <p><strong>Idade:</strong> {p.idade}</p>
             <p><strong>Endereço:</strong> {p.endereco}</p>
             <p><strong>Filhos:</strong> {p.filhos.join(', ')}</p>
+            <img src={animalImages[p.nomeA]} alt={p.nomeA} className="rounded shadow w-60"/>
           </li>
 
         ))}
