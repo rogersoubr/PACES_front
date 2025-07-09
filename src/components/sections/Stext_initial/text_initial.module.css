@@ -1,0 +1,11 @@
+.text_initial{
+    margin: 3rem;
+}
+.list{
+    margin: 1.5rem;
+    list-style:decimal;
+}
+.list li{
+    color: var(--color-yellow-700);
+    text-align: justify;
+}

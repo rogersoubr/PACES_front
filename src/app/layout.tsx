@@ -4,7 +4,7 @@ import "../styles/globals.css"
 
 //componentes
 import Header from "@/components/layout/header";
-import Main from "@/components/layout/main";
+import Main from "@/components/layout/main/main";
 import Footer from "@/components/layout/footer";
 
 const poppins = Poppins({

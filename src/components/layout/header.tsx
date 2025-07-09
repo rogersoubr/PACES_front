@@ -6,11 +6,11 @@ export default function Header(){
     //dados da ancoragem
     const items: NavegationProps[] = [        
         {
-            url: "text_initial",
+            url: "welcome",
             label: "Proposta"
         },
         {
-            url: "animais_run",
+            url: "allAnimals",
             label: "Animais"
         },        
         {
