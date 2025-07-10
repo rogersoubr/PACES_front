@@ -10,7 +10,7 @@ export default function Skeleton(){
                 {/* value = valor do elemento a. index = valor de 0 a 9. map percorre cada um desse array e cria li  */}
                 {[...Array(10)].map((value, index)=>{
                     return(
-                        <li key={index}className="bg-lime-50 p-4 border-2 border-b-lime-900 rounded shadow mb-4 text-lime-900  w-60" >
+                        <li key={index}className="bg-lime-200 p-4 rounded shadow mb-4 text-lime-900" >
                             <div className="h-6 bg-lime-200 rounded w-3/4 mb-2"></div>
                             <div className="h-4 bg-lime-200 rounded w-full mb-1"></div>
                             <div className="h-4 bg-lime-200 rounded w-5/6 mb-1"></div>

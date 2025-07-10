@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Skeleton from "@/skeleton";
 
 interface Local {
   id: string;
@@ -12,6 +13,7 @@ interface Local {
 
 export default function LocaisServices() {
   const [locals, setLocals] = useState<Local[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     axios.get("https://paces.onrender.com/locais")
@@ -20,8 +22,12 @@ export default function LocaisServices() {
       })
       .catch((error) => {
         console.log("DEBUG DO ROGER: ",error);
-      });
+      }).finally(()=>{
+        setLoading(false);
+      } );
   }, []);
+
+  if (loading) return <Skeleton />;
 
   return (
     <div className="flex flex-col justify-center items-center">

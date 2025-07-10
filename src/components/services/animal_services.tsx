@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Skeleton from "@/skeleton";
 
 interface Animal{
     id: string
@@ -16,6 +17,7 @@ interface Animal{
 
 export default function AnimaisServices(){
     const [animals, setAnimals] = useState<Animal[]>([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(()=>{
 
@@ -23,10 +25,13 @@ export default function AnimaisServices(){
             setAnimals(response.data.animal);
         } ).catch((error)=>{
             console.log("DEBUG DO ROGER: ",error);
-        } );
+        } ).finally(()=>{
+        setLoading(false);
+      } );
 
     }, [] );
 
+    if (loading) return <Skeleton />;
 
     return(
 

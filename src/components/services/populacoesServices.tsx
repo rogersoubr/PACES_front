@@ -35,8 +35,7 @@ export default function PopulationsServices() {
         console.log("DEBUG DO ROGER: ",error);
       }).finally(()=>{
         setLoading(false);
-      } )
-      ;
+      } );
   }, []);
 
   if (loading) return <Skeleton />;
@@ -53,7 +52,7 @@ export default function PopulationsServices() {
             <p><strong>Idade:</strong> {p.idade}</p>
             <p><strong>Endereço:</strong> {p.endereco}</p>
             <p><strong>Filhos:</strong> {p.filhos.join(', ')}</p>
-            <img src={animalImages[p.nomeA]} alt={p.nomeA} className="rounded shadow w-60"/>
+            <img src={animalImages[p.nomeA]} alt={p.nomeA} className="rounded shadow w-40"/>
           </li>
 
         ))}
