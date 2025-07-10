@@ -6,7 +6,7 @@ export default function Text_initial(){
     const {id, title, text} = textAll.section1_1;
     const {id2, title2, text2} = textAll.section1_2;
     return(
-        <section className={`welcome ${css_style.text_initial}`}>
+        <section className={`welcome ${css_style.text_initial}  flex flex-col md:flex-row justify-around items-center gap-4`}>
                 <Title_Text id={id} title={title} text={text}>
                     <h3 className="font-bold text-lime-900">Veja o vídeo a seguir: </h3>
                 </Title_Text>

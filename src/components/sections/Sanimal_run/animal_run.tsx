@@ -9,9 +9,9 @@ export default function Animal_run(){
         <section className={`allAnimals ${css_style.animal_num}`}>
                 <Title_Text id={id} title={title} text={text}>
 
-                <AnimaisServices/>
-
                 </Title_Text>
+
+                <AnimaisServices/>
         </section>
     );
 

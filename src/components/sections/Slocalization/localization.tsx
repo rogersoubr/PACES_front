@@ -10,9 +10,8 @@ export default function Localization(){
         <section className={`allLocals ${css_style.animal_num}`}>
                 <Title_Text id={id} title={title} text={text}>
 
-                <LocaisServices/>
-
                 </Title_Text>
+                <LocaisServices/>
         </section>
     );
 

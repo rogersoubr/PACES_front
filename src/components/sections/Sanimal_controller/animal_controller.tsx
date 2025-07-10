@@ -9,9 +9,8 @@ export default function Animal_controller(){
         <section className={`allFamilis ${css_style.animal_controller}`}>
                 <Title_Text id={id} title={title} text={text}>
 
-                <PopulacoesServices/>
-
                 </Title_Text>
+                <PopulacoesServices/>
         </section>
     );
 
