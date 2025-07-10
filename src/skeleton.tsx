@@ -3,8 +3,7 @@ import React from "react";
 export default function Skeleton(){
     return (
 
-        <div className="flex flex-col justify-center items-center">
-            <h1 className="text-lime-900 text-4xl" >Users</h1>
+        <div className="flex flex-col justify-center items-center w-full">
             <ul className="flex flex-wrap gar-4" >
                 {/*espalha o array com 10 posições, para cada posição, retorna um li. */}
                 {/* value = valor do elemento a. index = valor de 0 a 9. map percorre cada um desse array e cria li  */}
