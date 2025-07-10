@@ -38,7 +38,7 @@ export default function PopulationsServices() {
       } );
   }, []);
 
-  if (loading) return <Skeleton />;
+  if (loading) return <Skeleton/>;
 
   return (
     <div className="flex flex-col justify-center items-center">
@@ -46,7 +46,7 @@ export default function PopulationsServices() {
       <ul className="flex flex-wrap gap-4">
         {populations.map((p) => (
 
-          <li key={p.id} className="bg-lime-50 p-4 border-4 border-b-lime-900 rounded shadow mb-4 text-lime-900  w-60">
+          <li key={p.id} className="bg-lime-200 p-4 rounded shadow mb-4 text-lime-900 w-60">
 
             <h3 className="font-bold">Animal: {p.apelido} | {p.nomeA}</h3>
             <p><strong>Idade:</strong> {p.idade}</p>

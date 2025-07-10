@@ -11,7 +11,7 @@ interface ChildrenProps{
 
 export default function Main({children}: ChildrenProps){
     return(
-        <main className={ `w-full h-auto flex justify-center items-center flex-col m-20  ${css_style.main}`}>
+        <main className={` w-full h-auto flex justify-center items-center flex-col m-20  ${css_style.main} `}>
             <Text_initial></Text_initial>
             <Animal_run></Animal_run>
             <Animal_controller></Animal_controller>

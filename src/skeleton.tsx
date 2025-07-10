@@ -4,11 +4,11 @@ export default function Skeleton(){
     return (
 
         <div className="flex flex-col justify-center items-center">
-            <h1>Users</h1>
-            <ul className="flex flex-wrap gar-2" >
+            <h1 className="text-lime-900 text-4xl" >Users</h1>
+            <ul className="flex flex-wrap gar-4" >
                 {/*espalha o array com 10 posições, para cada posição, retorna um li. */}
                 {/* value = valor do elemento a. index = valor de 0 a 9. map percorre cada um desse array e cria li  */}
-                {[...Array(10)].map((value, index)=>{
+                {[...Array(6)].map((value, index)=>{
                     return(
                         <li key={index}className="bg-lime-200 p-4 rounded shadow mb-4 text-lime-900" >
                             <div className="h-6 bg-lime-200 rounded w-3/4 mb-2"></div>
